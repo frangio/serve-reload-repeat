@@ -1,0 +1,19 @@
+{
+  "name": "serve-reload-repeat",
+  "version": "1.0.0",
+  "bin": {
+    "serve-reload-repeat": "dist/cli.js"
+  },
+  "files": [ "src", "dist" ],
+  "scripts": {
+    "prepare": "esbuild src/cli.mjs --bundle --minify --sourcemap --platform=node --outdir=dist"
+  },
+  "repository": "github:frangio/serve-reload-repeat",
+  "author": "Francisco Giordano <fg@frang.io>",
+  "license": "MIT",
+  "homepage": "https://github.com/frangio/serve-reload-repeat#readme",
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "create-serve": "^1.0.1"
+  }
+}
